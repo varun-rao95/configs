@@ -1,0 +1,23 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+enter",
+        "command": "python.execSelectionInTerminal"
+    },
+    {
+        "key": "alt+b",          // whatever keybinding you wish
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u001b[1;3D"
+        },
+        "when": "terminalFocus && !terminalTextSelected"
+      },
+      {
+        "key": "alt+f",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u001b[1;3C"
+        },
+        "when": "terminalFocus && !terminalTextSelected"
+      },
+]
